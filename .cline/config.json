@@ -1,0 +1,29 @@
+{
+  "servers": {
+    "pubmed": { "command": "python mcp_servers/pubmed_server.py" },
+    "arxiv": { "command": "python mcp_servers/arxiv_server.py" },
+    "scholar": { "command": "python mcp_servers/scholar_server.py" },
+    "web": { "command": "python mcp_servers/web_server.py" },
+    "filesystem": { "command": "python mcp_servers/filesystem_server.py" },
+    "zotero": { "command": "python mcp_servers/zotero_server.py" },
+    "translate": { "command": "uvx mcp-server-translate" },
+    "style": { "command": "uvx mcp-server-pandoc" },
+    "image": { "command": "python mcp_servers/image_server.py" },
+    "diagram": { "command": "python mcp_servers/diagram_server.py" },
+    "citations": { "command": "python mcp_servers/citation_graph_server.py" },
+    "interactive": { "command": "python mcp_servers/interactive_graph_server.py" },
+    "ocr": { "command": "python mcp_servers/ocr_server.py" },
+    "audio": { "command": "python mcp_servers/audio_server.py" },
+    "video": { "command": "python mcp_servers/video_server.py" },
+    "tts": { "command": "python mcp_servers/tts_server.py" },
+    "plagiarism": { "command": "python mcp_servers/plagiarism_server.py" },
+    "factcheck": { "command": "python mcp_servers/factcheck_server.py" },
+    "biascheck": { "command": "python mcp_servers/biascheck_server.py" },
+    "marketing": { "command": "python mcp_servers/marketing_server.py" },
+    "socialmedia": { "command": "python mcp_servers/socialmedia_server.py" },
+    "analytics_twitter": { "command": "python mcp_servers/analytics_twitter_server.py" },
+    "feedback_optimizer": { "command": "python mcp_servers/feedback_optimizer.py" },
+    "smart_scheduler": { "command": "python mcp_servers/smart_scheduler.py" },
+    "dashboard": { "command": "python mcp_servers/dashboard_server.py" }
+  }
+}
