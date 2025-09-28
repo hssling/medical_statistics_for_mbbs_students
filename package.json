@@ -1,0 +1,56 @@
+{
+  "name": "medical-statistics-companion-website",
+  "version": "1.0.0",
+  "description": "Companion website for 'Essential Medical Statistics: A Practical Guide for Healthcare Professionals' featuring interactive learning tools",
+  "main": "website/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 --directory website",
+    "dev": "live-server --port=8000 --open=website --watch=website",
+    "build": "echo 'Static site - no build step required'",
+    "deploy": "gh-pages -d website",
+    "lint": "eslint website/assets/js/*.js --ext .js",
+    "lint:fix": "eslint website/assets/js/*.js --ext .js --fix",
+    "test": "echo 'Web-based interactive tests - manual verification required'",
+    "validate-html": "html-validator website/index.html",
+    "size-check": "ls -lh website/assets/js/*.js website/assets/css/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hssling/medical_statistics_for_mbbs_students.git"
+  },
+  "keywords": [
+    "medical-statistics",
+    "healthcare-education",
+    "interactive-learning",
+    "evidence-based-medicine",
+    "clinical-research",
+    "data-visualization",
+    "educational-technology"
+  ],
+  "author": "Dr. Siddalingaiah H S",
+  "license": "MIT",
+  "homepage": "https://hssling.github.io/medical_statistics_for_mbbs_students/",
+  "bugs": {
+    "url": "https://github.com/hssling/medical_statistics_for_mbbs_students/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "html-validator-cli": "^6.2.1",
+    "live-server": "^1.2.2",
+    "@eslint/js": "^9.3.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.8.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not ie <= 11"
+  ],
+  "contributors": [
+    "Dr. Siddalingaiah H S <+91-8941087719>",
+    "Shridevi Institute of Medical Sciences & Research Hospital"
+  ]
+}

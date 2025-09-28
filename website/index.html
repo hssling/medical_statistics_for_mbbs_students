@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Statistics: A Practical Guide - Companion Website</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>📊 MEDICAL STATISTICS</h1>
+                <p>Essential Statistics for Healthcare Professionals</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="chapters/">Chapters</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#code">Code Examples</a></li>
+                <li><a href="#datasets">Datasets</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Welcome to the Companion Website</h2>
+                    <h3>Essential Medical Statistics: A Practical Guide for Healthcare Professionals</h3>
+                    <p>Interactive tools, practice datasets, code examples, and video tutorials to enhance your learning experience.</p>
+                    <div class="hero-buttons">
+                        <a href="chapters/chapter1.html" class="btn primary">Start Reading</a>
+                        <a href="#tools" class="btn secondary">Interactive Tools</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/book-cover-placeholder.png" alt="Medical Statistics Book Cover" style="max-width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <p style="margin-top: 10px; color: #666; font-size: 14px;">by Dr. Siddalingaiah H S</p>
+                </div>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Interactive Tools</h3>
+                    <p>Practical statistical calculators and test selectors</p>
+                    <a href="#tools" class="feature-link">Explore Tools →</a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-play-circle"></i>
+                    <h3>Video Tutorials</h3>
+                    <p>18 chapter-by-chapter video explanations</p>
+                    <a href="#videos" class="feature-link">Watch Videos →</a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Code Examples</h3>
+                    <p>R, Python, and Stata code repositories</p>
+                    <a href="#code" class="feature-link">View Code →</a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Practice Datasets</h3>
+                    <p>Real and synthetic medical datasets</p>
+                    <a href="#datasets" class="feature-link">Download Data →</a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Q&A forum and discussion boards</p>
+                    <a href="#community" class="feature-link">Join Community →</a>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App</h3>
+                    <p>Study on-the-go with our companion app</p>
+                    <a href="#mobile" class="feature-link">Learn More →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Learning Tools Section -->
+        <section class="learning-tools" id="tools">
+            <h2>🏗️ Interactive Learning Tools</h2>
+
+            <!-- Clinical Decision Support -->
+            <div id="clinicalSimulator" class="tool-card">
+                <h3>🩺 Clinical Decision Simulator</h3>
+                <p>Practice diagnostic reasoning with real patient cases and probability calculations.</p>
+            </div>
+
+            <!-- Statistical Calculator -->
+            <div class="tool-card">
+                <h3>🧮 Advanced Statistical Calculator</h3>
+                <p>Calculate sample sizes, confidence intervals, and statistical powers with real-time feedback.</p>
+                <div class="calc-preview">
+                    <form id="sampleSizeCalc" class="calc-form">
+                        <select id="calcType" class="calc-select">
+                            <option value="means">Mean Difference</option>
+                            <option value="proportions">Proportions</option>
+                            <option value="survival">Survival Analysis</option>
+                        </select>
+                        <div id="calcInputs"></div>
+                        <button type="submit" class="btn calculate">Calculate</button>
+                        <div id="calcResult" class="calc-result"></div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Statistics Learning Game -->
+            <div id="statsGame" class="tool-card">
+                <h3>🎯 Statistics Learning Game</h3>
+                <p>Test your knowledge with timed quizzes and detailed explanations.</p>
+            </div>
+
+            <!-- Data Visualizations -->
+            <div class="tool-card">
+                <h3>📈 Interactive Data Visualizations</h3>
+                <p>Explore statistical concepts through interactive charts and graphs.</p>
+                <div class="viz-preview">
+                    <div id="scatterPlot" style="height: 250px; width: 100%; margin-top: 15px;"></div>
+                </div>
+            </div>
+                    <p>Chapters 7-14: Regression, ANOVA, Survival Analysis</p>
+                    <a href="chapters/chapter7.html">Advanced</a>
+                </div>
+                <div class="path-step">
+                    <span class="step-number">4</span>
+                    <h3>Practice & Apply</h3>
+                    <p>Chapters 15-18: Software, Critical Appraisal, Implementation</p>
+                    <a href="chapters/chapter15.html">Practice</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Companion website for "Essential Medical Statistics: A Practical Guide for Healthcare Professionals" by Dr. Siddalingaiah H S</p>
+                <p><strong>Contact:</strong> +91-8941087719</p>
+                <p><strong>Institution:</strong> Shridevi Institute of Medical Sciences and Research Hospital, Tumkur, Karnataka, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Download Textbook</a></li>
+                    <li><a href="#datasets">Practice Datasets</a></li>
+                    <li><a href="#videos">Video Tutorials</a></li>
+                    <li><a href="#code">Code Libraries</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#community">Discussion Forum</a></li>
+                    <li><a href="#">Ask Questions</a></li>
+                    <li><a href="#">Study Groups</a></li>
+                    <li><a href="#">Share Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dr. Siddalingaiah H S. All rights reserved.</p>
+            <p>Part of the Essential Medical Statistics series for healthcare professionals.</p>
+        </div>
+    </footer>
+
+    <!-- D3.js for visualizations -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculator.js"></script>
+    <script src="assets/js/interactive-viz.js"></script>
+    <script src="assets/js/clinical-decision.js"></script>
+</body>
+</html>
