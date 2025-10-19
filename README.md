@@ -108,6 +108,20 @@ python -m http.server 8000
 # Visit: http://localhost:8000/
 ```
 
+### **Create a downloadable ZIP archive**
+GitHub rejects large binary files attached to pull requests, so the
+`created_files.zip` archive is no longer tracked in version control. Generate a
+fresh copy locally whenever you need to share the latest project artefacts:
+
+```bash
+python create_created_files_zip.py
+```
+
+The script lives in the repository root and excludes common build artefacts by
+default, including Android packages (`.apk`, `.aab`). Run
+`python create_created_files_zip.py --help` to learn how to customise the
+output file name or tweak the exclusion list.
+
 ### **Production Deployment**
 - **GitHub Pages**: Automatic deployment via GitHub Actions
 - **CDN Integration**: Fast global content delivery
