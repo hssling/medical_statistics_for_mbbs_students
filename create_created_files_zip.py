@@ -43,6 +43,12 @@ DEFAULT_EXCLUDED_FILES = {
     "Thumbs.db",
 }
 
+# File extensions (case-insensitive) that are excluded regardless of location.
+DEFAULT_EXCLUDED_EXTENSIONS = {
+    ".apk",
+    ".aab",
+}
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -73,6 +79,13 @@ def parse_args() -> argparse.Namespace:
         metavar="NAME",
         help="Additional file name to exclude. May be provided multiple times.",
     )
+    parser.add_argument(
+        "--exclude-ext",
+        action="append",
+        default=[],
+        metavar=".EXT",
+        help="Additional file extension to exclude (e.g. .log). May be provided multiple times.",
+    )
     return parser.parse_args()
 
 
@@ -82,10 +95,20 @@ def should_skip_dir(dirname: str, include_hidden: bool, extra_excludes: Set[str]
     return dirname in DEFAULT_EXCLUDED_DIRS or dirname in extra_excludes
 
 
-def should_skip_file(filename: str, include_hidden: bool, extra_excludes: Set[str]) -> bool:
+def should_skip_file(
+    filename: str,
+    include_hidden: bool,
+    extra_excludes: Set[str],
+    extra_extensions: Set[str],
+) -> bool:
     if not include_hidden and filename.startswith("."):
         return True
-    return filename in DEFAULT_EXCLUDED_FILES or filename in extra_excludes
+    if filename in DEFAULT_EXCLUDED_FILES or filename in extra_excludes:
+        return True
+    suffix = Path(filename).suffix.lower()
+    if suffix in DEFAULT_EXCLUDED_EXTENSIONS or suffix in extra_extensions:
+        return True
+    return False
 
 
 def build_archive(
@@ -93,6 +116,7 @@ def build_archive(
     include_hidden: bool,
     exclude_dirs: Set[str],
     exclude_files: Set[str],
+    exclude_extensions: Set[str],
 ) -> None:
     project_root = Path(__file__).resolve().parent
     with zipfile.ZipFile(output_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
@@ -108,7 +132,12 @@ def build_archive(
             ]
 
             for file_name in files:
-                if should_skip_file(file_name, include_hidden=include_hidden, extra_excludes=exclude_files):
+                if should_skip_file(
+                    file_name,
+                    include_hidden=include_hidden,
+                    extra_excludes=exclude_files,
+                    extra_extensions=exclude_extensions,
+                ):
                     continue
                 if rel_root == Path(".") and file_name == output_path.name:
                     # Avoid adding the archive itself if it already exists.
@@ -126,12 +155,14 @@ def main() -> None:
 
     exclude_dirs = set(args.exclude_dir)
     exclude_files = set(args.exclude_file)
+    exclude_extensions = {ext.lower() for ext in args.exclude_ext}
 
     build_archive(
         output_path=output_path,
         include_hidden=args.include_hidden,
         exclude_dirs=exclude_dirs,
         exclude_files=exclude_files,
+        exclude_extensions=exclude_extensions,
     )
     print(f"Created archive: {output_path}")
 

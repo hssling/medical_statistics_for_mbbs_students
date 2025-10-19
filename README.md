@@ -118,8 +118,9 @@ python create_created_files_zip.py
 ```
 
 The script lives in the repository root and excludes common build artefacts by
-default. Run `python create_created_files_zip.py --help` to learn how to
-customise the output file name or tweak the exclusion list.
+default, including Android packages (`.apk`, `.aab`). Run
+`python create_created_files_zip.py --help` to learn how to customise the
+output file name or tweak the exclusion list.
 
 ### **Production Deployment**
 - **GitHub Pages**: Automatic deployment via GitHub Actions
