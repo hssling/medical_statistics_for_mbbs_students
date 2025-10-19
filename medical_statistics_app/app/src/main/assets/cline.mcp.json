@@ -1,0 +1,30 @@
+{
+  "name": "AI Content Creator Matrix",
+  "description": "Universal system for generating books, articles, blogs, courses, scripts, marketing, social media, and multimedia content.",
+  "steps": [
+    {
+      "title": "Content Creator Control Panel",
+      "prompt": "Ask the user to select:\n- Content Type: [Book, Academic Article, Blog Series, Social Media Posts, Marketing Copy, Online Course, Screenplay/Script, Video Script, Podcast, Audiobook, Slide Deck, Meme]\n- Language\n- Subject/Topic\n- Genre/Style (Academic, Narrative, Poetic, Humorous, Dramatic, Minimalist)\n- Extras (Images, Diagrams, Citation Graphs, Interactive Dashboards, TTS Narration)\nSave as notes/session_content.json."
+    },
+    {
+      "title": "Knowledge Gathering",
+      "prompt": "If content type is knowledge-heavy (Book, Article, Course), query MCP servers (pubmed, arxiv, scholar, web, zotero). If creative (Novel, Screenplay, Social Media), use web + creative generation. Save results in data/{topic}_{content_type}.json."
+    },
+    {
+      "title": "Draft Content",
+      "prompt": "Generate first draft in chosen format:\n- Book → chapters with Preface, TOC, References\n- Article → Abstract, Intro, Methods, Results, Discussion\n- Blog Series → multiple short posts\n- Social Media → platform-optimized posts (Twitter, LinkedIn, Instagram)\n- Marketing → headlines, taglines, ad variations\n- Course → syllabus, modules, lessons, quizzes\n- Screenplay → scenes, dialogues, stage directions\n- Video Script → narration + scene descriptions\n- Podcast → conversational script\n- Slide Deck → structured slides with bullet points\nSave to drafts/{topic}_{content_type}.{ext}."
+    },
+    {
+      "title": "Enhance Content",
+      "prompt": "Refine draft for clarity, tone, style, and target audience. If extras selected, call image, diagram, citation, or interactive MCPs. Insert references to visuals. Save to edits/{topic}_{content_type}.{ext}."
+    },
+    {
+      "title": "Compile & Export",
+      "prompt": "Format final content using appropriate template:\n- Books → PDF/EPUB/DOCX\n- Articles → LaTeX/PDF/DOCX\n- Blogs → HTML/Markdown\n- Social Media → JSON snippets for scheduling\n- Marketing → text/JSON for campaigns\n- Courses → Markdown + slides + quiz bank\n- Screenplay → screenplay_template.txt\n- Video Script → txt/pdf\n- Podcast → txt transcript + MP3 narration\n- Slide Deck → PDF/PPTX\nSave to content/{content_type}/."
+    },
+    {
+      "title": "Closed-Loop Feedback",
+      "prompt": "After 24-48 hours, if analytics are enabled, call analytics MCPs and feedback_optimizer to analyze performance and update scheduling/tone rules in notes/optimization_feedback.json for the next batch."
+    }
+  ]
+}

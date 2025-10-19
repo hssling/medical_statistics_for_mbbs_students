@@ -1,0 +1,16 @@
+patient_id,treatment,age,gender,baseline_bp,baseline_hba1c,final_bp,final_hba1c,adverse_events,followup_complete
+101,Treatment A,52,Male,145,8.2,132,7.1,No,Yes
+102,Treatment A,48,Female,148,7.8,135,6.9,Yes,Yes
+103,Treatment A,61,Male,152,9.1,140,8.2,No,Yes
+104,Treatment A,55,Female,141,7.5,128,6.4,Yes,Yes
+105,Treatment A,49,Male,149,8.6,137,7.3,No,Yes
+201,Treatment B,47,Female,144,7.9,131,6.8,No,Yes
+202,Treatment B,54,Male,151,8.5,139,7.6,No,Yes
+203,Treatment B,58,Male,147,8.9,133,7.2,Yes,Yes
+204,Treatment B,51,Female,143,7.7,129,6.5,No,Yes
+205,Treatment B,56,Female,149,8.3,136,7.0,Yes,Yes
+301,Placebo,50,Male,146,8.0,141,7.8,No,Yes
+302,Placebo,53,Female,150,8.4,145,8.1,No,Yes
+303,Placebo,59,Male,148,8.7,144,8.4,Yes,No
+304,Placebo,45,Female,142,7.6,139,7.4,No,Yes
+305,Placebo,57,Male,153,9.0,149,8.8,No,Yes

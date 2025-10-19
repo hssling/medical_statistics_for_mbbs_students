@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Introduction to Medical Statistics - Companion Website</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>📊 MEDICAL STATISTICS</h1>
+                <p>Essential Statistics for Healthcare Professionals</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../chapters/">Chapters</a></li>
+                <li><a href="../index.html#tools">Tools</a></li>
+                <li><a href="../index.html#code">Code Examples</a></li>
+                <li><a href="../index.html#datasets">Datasets</a></li>
+                <li><a href="../index.html#videos">Videos</a></li>
+                <li><a href="../index.html#community">Community</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="chapter-container">
+            <!-- Chapter Navigation -->
+            <aside class="chapter-sidebar">
+                <h3>Book Chapters</h3>
+                <nav class="chapter-nav">
+                    <a href="chapter1.html" class="active">Chapter 1: Introduction</a>
+                    <a href="chapter2.html">Chapter 2: Data Description</a>
+                    <a href="chapter3.html">Chapter 3: Probability</a>
+                    <a href="chapter4.html">Chapter 4: Sampling</a>
+                    <a href="chapter5.html">Chapter 5: Hypothesis Testing</a>
+                    <a href="chapter6.html">Chapter 6: Categorical Data</a>
+                    <a href="chapter7.html">Chapter 7: Correlation & Regression</a>
+                    <a href="chapter8.html">Chapter 8: Multiple Regression</a>
+                    <a href="chapter9.html">Chapter 9: ANOVA</a>
+                    <a href="chapter10.html">Chapter 10: Non-Parametric Tests</a>
+                    <a href="chapter11.html">Chapter 11: Survival Analysis</a>
+                    <a href="chapter12.html">Chapter 12: Diagnostic Tests</a>
+                    <a href="chapter13.html">Chapter 13: Clinical Trials</a>
+                    <a href="chapter14.html">Chapter 14: Meta-Analysis</a>
+                    <a href="chapter15.html">Chapter 15: Statistical Software</a>
+                    <a href="chapter16.html">Chapter 16: Critical Appraisal</a>
+                    <a href="chapter17.html">Chapter 17: Statistics in Practice</a>
+                    <a href="chapter18.html">Chapter 18: Advanced Topics</a>
+                </nav>
+
+                <!-- Chapter Resources -->
+                <div class="chapter-resources">
+                    <h4>Chapter Resources</h4>
+                    <a href="#quiz" class="resource-link"><i class="fas fa-brain"></i> Self-Assessment Quiz</a>
+                    <a href="#exercises" class="resource-link"><i class="fas fa-pencil-alt"></i> Practice Exercises</a>
+                    <a href="#examples" class="resource-link"><i class="fas fa-lightbulb"></i> Medical Examples</a>
+                    <a href="#video" class="resource-link"><i class="fas fa-play-circle"></i> Tutorial Video</a>
+                    <a href="#code" class="resource-link"><i class="fas fa-code"></i> Code Examples</a>
+                </div>
+            </aside>
+
+            <!-- Chapter Content -->
+            <article class="chapter-content">
+                <header class="chapter-header">
+                    <h1><span class="chapter-number">Chapter 1</span> Introduction to Medical Statistics</h1>
+                    <p class="chapter-subtitle">Why Statistical Thinking Matters in Healthcare</p>
+
+                    <div class="chapter-meta">
+                        <span class="chapter-duration"><i class="fas fa-clock"></i> 45 min</span>
+                        <span class="chapter-level"><i class="fas fa-signal"></i> Beginner</span>
+                        <span class="chapter-objectives">Learning Objectives: Understand role of statistics in medicine, basic concepts and terminology</span>
+                    </div>
+                </header>
+
+                <!-- Navigation Buttons -->
+                <div class="chapter-navigation">
+                    <a href="../index.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
+                    <span class="nav-separator"></span>
+                    <span class="current-chapter">Chapter 1</span>
+                    <span class="nav-separator"></span>
+                    <a href="chapter2.html" class="nav-btn">Next <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Chapter Outline -->
+                <div class="chapter-outline">
+                    <h2>Chapter Overview</h2>
+                    <ul>
+                        <li><a href="#sec1-1">1.1 What is Medical Statistics?</a></li>
+                        <li><a href="#sec1-2">1.2 Role in Evidence-Based Medicine</a></li>
+                        <li><a href="#sec1-3">1.3 Types of Data in Healthcare</a></li>
+                        <li><a href="#sec1-4">1.4 Basic Statistical Concepts</a></li>
+                        <li><a href="#sec1-5">1.5 The Scientific Method</a></li>
+                        <li><a href="#sec1-6">1.6 Common Pitfalls</a></li>
+                        <li><a href="#sec1-7">1.7 Ethical Considerations</a></li>
+                        <li><a href="#summary">Chapter Summary</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 1.1 -->
+                <section id="sec1-1" class="chapter-section">
+                    <h2>1.1 What is Medical Statistics?</h2>
+
+                    <div class="key-concept-box">
+                        <h4><i class="fas fa-lightbulb"></i> Key Definition</h4>
+                        <p><strong>Medical statistics</strong> is the science of collecting, analyzing, interpreting, and presenting healthcare data to make informed medical and health decisions.</p>
+                    </div>
+
+                    <p>Medical statistics provides the tools to:</p>
+                    <ul>
+                        <li>Quantify the uncertainty in medical research findings</li>
+                        <li>Determine if differences between treatments are real or due to chance</li>
+                        <li>Calculate the probability of outcomes</li>
+                        <li>Design studies that can answer important clinical questions</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <h4><i class="fas fa-hospital"></i> Clinical Example</h4>
+                        <p>A hospital administrator wants to know if a new patient education program reduces readmission rates. Statistical analysis can determine whether the observed decrease in readmissions is likely due to the program rather than random variation.</p>
+                    </div>
+                </section>
+
+                <!-- Section 1.2 -->
+                <section id="sec1-2" class="chapter-section">
+                    <h2>1.2 Role in Evidence-Based Medicine</h2>
+
+                    <p>Evidence-Based Medicine (EBM) follows this process:</p>
+                    <ol>
+                        <li><strong>Ask</strong> a focused clinical question</li>
+                        <li><strong>Acquire</strong> the best available evidence</li>
+                        <li><strong>Appraise</strong> the evidence critically</li>
+                        <li><strong>Apply</strong> the results to patient care</li>
+                        <li><strong>Assess</strong> the outcomes</li>
+                    </ol>
+
+                    <p>Statistics enables all steps of EBM by providing tools to:</p>
+                    <ul>
+                        <li>Assemble evidence from multiple studies (meta-analysis)</li>
+                        <li>Critically evaluate research methods</li>
+                        <li>Apply research findings to individual patients</li>
+                        <li>Monitor results over time</li>
+                    </ul>
+                </section>
+
+                <!-- Section 1.3 -->
+                <section id="sec1-3" class="chapter-section">
+                    <h2>1.3 Types of Data in Healthcare</h2>
+
+                    <h3>Categorical Data</h3>
+                    <ul>
+                        <li><strong>Nominal</strong>: Categories without order (blood type, gender)</li>
+                        <li><strong>Ordinal</strong>: Categories with meaningful order (pain scale, cancer stage)</li>
+                        <li><strong>Binary</strong>: Two categories (alive/dead, yes/no)</li>
+                    </ul>
+
+                    <h3>Numerical Data</h3>
+                    <ul>
+                        <li><strong>Continuous</strong>: Any value within a range (blood pressure, weight)</li>
+                        <li><strong>Discrete</strong>: Whole numbers (number of children, hospital visits)</li>
+                    </ul>
+
+                    <h3>Time-to-Event Data</h3>
+                    <p>Time until an event occurs (survival time, time to disease recurrence)</p>
+                </section>
+
+                <!-- Section 1.4 -->
+                <section id="sec1-4" class="chapter-section">
+                    <h2>1.4 Basic Statistical Concepts</h2>
+
+                    <h3>Population vs Sample</h3>
+                    <ul>
+                        <li><strong>Population</strong>: Entire group of interest</li>
+                        <li><strong>Sample</strong>: Subset of the population</li>
+                    </ul>
+
+                    <h3>Parameters vs Statistics</h3>
+                    <ul>
+                        <li><strong>Parameter</strong>: Characteristic of the population (μ, σ₂, π)</li>
+                        <li><strong>Statistic</strong>: Characteristic calculated from sample data (x̄, s, p)</li>
+                    </ul>
+
+                    <div class="important-note">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Important Note</h4>
+                        <p>Population parameters are usually unknown and are estimated from sample statistics.</p>
+                    </div>
+                </section>
+
+                <!-- Section 1.5 -->
+                <section id="sec1-5" class="chapter-section">
+                    <h2>1.5 The Scientific Method in Medical Research</h2>
+
+                    <ol>
+                        <li><strong>Identify the Problem</strong>: Observe or question existing practice</li>
+                        <li><strong>Review Literature</strong>: What is already known?</li>
+                        <li><strong>Formulate Hypothesis</strong>: Make a testable prediction</li>
+                        <li><strong>Design Study</strong>: Choose appropriate research methods</li>
+                        <li><strong>Collect Data</strong>: Systematically gather information</li>
+                        <li><strong>Analyze Data</strong>: Use statistical methods</li>
+                        <li><strong>Interpret Results</strong>: Draw conclusions from the data</li>
+                        <li><strong>Report Findings</strong>: Share with the scientific community</li>
+                    </ol>
+                </section>
+
+                <!-- Common Pitfalls -->
+                <section id="sec1-6" class="chapter-section">
+                    <h2>1.6 Common Pitfalls in Medical Statistics</h2>
+
+                    <div class="warning-box">
+                        <h4><i class="fas fa-exclamation-circle"></i> Statistical Pitfalls</h4>
+                        <ul>
+                            <li><strong>Drawing conclusions beyond the data</strong>: Although statistics can demonstrate difference, it cannot prove causation</li>
+                            <li><strong>Ignoring sampling bias</strong>: Results from non-representative samples may not apply to the broader population</li>
+                            <li><strong>Et Tu Brute sums</strong>: No single test reveals the complete truth about complex medical phenomena</li>
+                        </ul>
+                    </div>
+
+                    <p>To avoid these pitfalls:</p>
+                    <ul>
+                        <li>Always consider alternative explanations</li>
+                        <li>Calculate confidence intervals as well as p-values</li>
+                        <li>Carefully examine study design and samples</li>
+                        <li>Consider biological plausibility of results</li>
+                    </ul>
+                </section>
+
+                <!-- Ethical Considerations -->
+                <section id="sec1-7" class="chapter-section">
+                    <h2>1.7 Ethical Considerations</h2>
+
+                    <p>Research ethics ensure the responsible conduct of studies:</p>
+                    <ul>
+                        <li><strong>Informed consent</strong>: Participants understand risks and benefits</li>
+                        <li><strong>Beneficence</strong>: Research must benefit participants and society</li>
+                        <li><strong>Non-maleficence</strong>: First, do no harm</li>
+                        <li><strong>Justice</strong>: Fair distribution of research benefits and burdens</li>
+                        <li><strong>Confidentiality</strong>: Protect participant privacy</li>
+                    </ul>
+
+                    <div class="statistic-box">
+                        <h4><i class="fas fa-chart-bar"></i> Institutional Review Boards (IRBs)</h4>
+                        <p>IRBs review research proposals to ensure ethical compliance. Studies cannot begin without IRB approval.</p>
+                    </div>
+                </section>
+
+                <!-- Chapter Summary -->
+                <section id="summary" class="chapter-section summary-section">
+                    <h2>Chapter Summary</h2>
+
+                    <div class="chapter-summary">
+                        <h3>Key Takeaways:</h3>
+                        <ul>
+                            <li>Medical statistics applies statistical methods to healthcare problems</li>
+                            <li>Statistics is essential for evidence-based medicine</li>
+                            <li>Understanding data types helps choose appropriate analyses</li>
+                            <li>The scientific method provides a systematic approach to research</li>
+                            <li>Careful attention to ethics ensures responsible research</li>
+                        </ul>
+
+                        <h3>What You Learned:</h3>
+                        <ul>
+                            <li>Define medical statistics and its role in healthcare</li>
+                            <li>Distinguish between different types of data</li>
+                            <li>Understand the difference between populations and samples</li>
+                            <li>Identify common statistical pitfalls</li>
+                            <li>Recognize ethical considerations in medical research</li>
+                        </ul>
+                    </div>
+
+                    <div class="next-steps">
+                        <h3>Next Steps:</h3>
+                        <p>Chapter 2 will introduce how to describe and summarize data using tables, graphs, and basic statistics.</p>
+                        <a href="chapter2.html" class="btn primary">Continue to Chapter 2</a>
+                    </div>
+                </section>
+
+                <!-- Practice Exercises -->
+                <section id="exercises" class="practice-section">
+                    <h2>Practice Exercises</h2>
+
+                    <div class="exercise-block">
+                        <h3>Exercise 1.1: Identifying Data Types</h3>
+                        <p>Classify each of the following variables as categorical, continuous, or time-to-event:</p>
+                        <ol>
+                            <li>Blood type (A, B, O, AB)</li>
+                            <li>Systolic blood pressure (mmHg)</li>
+                            <li>Time to hospital discharge after surgery</li>
+                            <li>Pain level (none, mild, moderate, severe)</li>
+                        </ol>
+                        <details>
+                            <summary>Show Solutions</summary>
+                            <ol>
+                                <li>Categorical (nominal)</li>
+                                <li>Continuous</li>
+                                <li>Time-to-event</li>
+                                <li>Categorical (ordinal)</li>
+                            </ol>
+                        </details>
+                    </div>
+
+                    <div class="exercise-block">
+                        <h3>Exercise 1.2: Population vs Sample</h3>
+                        <p>For a study evaluating a new blood pressure medication, identify the population and suggest how you would select a sample.</p>
+                        <details>
+                            <summary>Show Solutions</summary>
+                            <p><strong>Population:</strong> All patients with essential hypertension</p>
+                            <p><strong>Sample:</strong> Recruit from outpatient clinics using stratified sampling by age and severity</p>
+                        </details>
+                    </div>
+                </section>
+
+                <!-- Chapter Quiz -->
+                <section id="quiz" class="quiz-section">
+                    <h2>Chapter Quiz</h2>
+
+                    <form id="chapter1-quiz" class="quiz-form">
+                        <div class="quiz-question">
+                            <h4>Question 1: What is the primary purpose of medical statistics?</h4>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q1" value="a"> To calculate complex mathematical formulas</label>
+                                <label><input type="radio" name="q1" value="b"> To make informed Healthcare decisions using data</label>
+                                <label><input type="radio" name="q1" value="c"> To collect patient questionnaires</label>
+                                <label><input type="radio" name="q1" value="d"> To replace clinical judgment</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <h4>Question 2: Which of the following is NOT a type of data in healthcare?</h4>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q2" value="a"> Categorical data</label>
+                                <label><input type="radio" name="q2" value="b"> Continuous data</label>
+                                <label><input type="radio" name="q2" value="c"> Time-to-event data</label>
+                                <label><input type="radio" name="q2" value="d"> Marketing data</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <h4>Question 3: In research, a sample is:</h4>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q3" value="a"> All individuals recruited into a study</label>
+                                <label><input type="radio" name="q3" value="b"> A subset of the population being studied</label>
+                                <label><input type="radio" name="q3" value="c"> The complete population</label>
+                                <label><input type="radio" name="q3" value="d"> Only the study participants who complete follow-up</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn calculate">Submit Quiz</button>
+                        <div id="quiz-result" class="quiz-result"></div>
+                    </form>
+                </section>
+
+                <!-- Chapter Navigation -->
+                <div class="chapter-navigation bottom">
+                    <a href="../index.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
+                    <a href="chapter2.html" class="nav-btn">Next Chapter <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Companion website for "Essential Medical Statistics: A Practical Guide for Healthcare Professionals" by Dr. Siddalingaiah H S</p>
+                <p><strong>Contact:</strong> +91-8941087719</p>
+                <p><strong>Institution:</strong> Shridevi Institute of Medical Sciences and Research Hospital, Tumkur, Karnataka, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Download Textbook</a></li>
+                    <li><a href="#datasets">Practice Datasets</a></li>
+                    <li><a href="#videos">Video Tutorials</a></li>
+                    <li><a href="#code">Code Libraries</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#community">Discussion Forum</a></li>
+                    <li><a href="#">Ask Questions</a></li>
+                    <li><a href="#">Study Groups</a></li>
+                    <li><a href="#">Share Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dr. Siddalingaiah H S. All rights reserved.</p>
+            <p>Part of the Essential Medical Statistics series for healthcare professionals.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/chapter.js"></script>
+</body>
+</html>

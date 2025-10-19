@@ -1,0 +1,29 @@
+{
+  "book_exports": [
+    {
+      "title": "Community Medicine Textbook as per CBME Competencies",
+      "format": "PDF",
+      "url": "export/book/community_medicine_cbme.pdf",
+      "published_date": "2025-09-25T23:46:00+05:30",
+      "platform": "Local PDF",
+      "status": "published"
+    },
+
+    {
+      "title": "Community Medicine Textbook as per CBME Competencies",
+      "format": "EPUB",
+      "url": "export/book/community_medicine_cbme.epub",
+      "published_date": "2025-09-25T23:46:30+05:30",
+      "platform": "Local EPUB",
+      "status": "published"
+    },
+    {
+      "title": "Community Medicine Textbook as per CBME Competencies",
+      "format": "DOCX",
+      "url": "export/book/community_medicine_cbme.docx",
+      "published_date": "2025-09-25T23:46:45+05:30",
+      "platform": "Local DOCX",
+      "status": "published"
+    }
+  ]
+}
